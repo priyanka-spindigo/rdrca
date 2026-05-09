@@ -1,0 +1,82 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+---
+
+<SiteLayout title="Contact Us | RDR & Associates">
+  <section class="mx-auto max-w-6xl px-4 py-14 md:py-20">
+    <div class="text-xs font-semibold tracking-widest text-slate-500 uppercase">Contact Us</div>
+    <h1 class="mt-3 text-4xl md:text-5xl font-semibold tracking-tight">Get in touch</h1>
+    <p class="mt-6 max-w-3xl text-slate-600 text-lg">
+      We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+    </p>
+
+    <div class="mt-10 grid gap-8 md:grid-cols-2">
+      <div class="space-y-6">
+        <div class="rounded-2xl border border-slate-100 p-6">
+          <div class="text-sm font-semibold text-slate-900">Address</div>
+          <p class="mt-2 text-sm text-slate-600">
+            #700, 3rd Floor, Sai Nanasu Plaza 30th Main, BTM 2nd Stage Bangalore - 560076
+          </p>
+        </div>
+        <div class="rounded-2xl border border-slate-100 p-6">
+          <div class="text-sm font-semibold text-slate-900">Phone</div>
+          <p class="mt-2 text-sm text-slate-600">+919072893825 • +919746756687</p>
+        </div>
+        <div class="rounded-2xl border border-slate-100 p-6">
+          <div class="text-sm font-semibold text-slate-900">Email</div>
+          <p class="mt-2 text-sm text-slate-600">info@rdrca.com</p>
+        </div>
+        <div class="rounded-2xl border border-slate-100 p-6">
+          <div class="text-sm font-semibold text-slate-900">Timings</div>
+          <p class="mt-2 text-sm text-slate-600">9:30 AM – 6:00 PM (Monday - Friday)</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl border border-slate-100 p-6 md:p-8">
+        <div class="text-sm font-semibold text-slate-900">Send us a message</div>
+        <form class="mt-6 space-y-4" method="post" action="#">
+          <div>
+            <label class="block text-sm font-medium text-slate-700" for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+              class="mt-1 w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-slate-900/20"
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700" for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              class="mt-1 w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-slate-900/20"
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700" for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              required
+              class="mt-1 w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-slate-900/20"
+            />
+          </div>
+          <button
+            type="submit"
+            class="inline-flex items-center rounded-full bg-slate-900 px-5 py-2.5 text-white hover:bg-slate-800"
+          >
+            Submit
+          </button>
+          <p class="text-xs text-slate-500">
+            This form is a static placeholder. When you deploy, we can wire it to Netlify Forms, Formspree, or your own API.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+</SiteLayout>
+

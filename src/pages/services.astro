@@ -1,0 +1,299 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+---
+
+<SiteLayout
+  title="Expert Accounting & Financial Services | RDR & Associates"
+  description="Comprehensive financial services including Bookkeeping, Tax Compliance, Payroll Management, and Strategic Advisory. Tailored solutions for businesses and individuals."
+>
+  <section class="overflow-hidden lg:pt-40 lg:pb-20 border-[#3305d8]/10 border-b pt-40 pb-28 relative">
+    <div class="absolute inset-0 -z-20 h-full w-full bg-white"></div>
+    <div class="absolute inset-0 -z-10 h-full w-full">
+      <img src="https://images.unsplash.com/photo-1710776531873-fa1c10b7a68f?w=3840&q=80" alt="Financial Architecture" class="h-full w-full object-cover opacity-[0.05] saturate-0 mix-blend-multiply" />
+    </div>
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-slate-50/50 via-white to-white"></div>
+    <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#676769_1px,transparent_1px),linear-gradient(to_bottom,#676769_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-[0.03]"></div>
+
+    <div class="absolute right-0 bottom-20 translate-x-1/3 opacity-30 pointer-events-none -z-10 w-[1200px] animate-float">
+      <svg viewBox="0 0 1440 300" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+        <path d="M-100 200 C 400 250 800 50 1540 150" stroke="url(#sw-gradient)" stroke-width="3" fill="none"></path>
+      </svg>
+    </div>
+
+    <div class="max-w-7xl mr-auto ml-auto pr-8 pl-8">
+      <div class="grid lg:grid-cols-2 gap-20 gap-x-20 gap-y-20 items-start">
+        <div class="relative">
+          <span class="inline-block uppercase text-xs font-semibold text-[#3305d8] tracking-widest bg-[#3305d8]/5 border-[#3305d8]/20 border rounded-none mb-8 pt-1.5 pr-4 pb-1.5 pl-4">
+            Our Services
+          </span>
+          <h1 class="hero-headline leading-[1] md:text-7xl text-6xl font-medium text-slate-900 tracking-tight font-serif mb-8">
+            <p>
+              We help you master your <br /><em>financial future</em>
+            </p>
+          </h1>
+        </div>
+        <div class="flex flex-col justify-center h-full pt-4">
+          <p class="leading-relaxed md:text-2xl text-2xl font-light text-[#676769] font-inter mb-10">
+            We empower businesses with precision accounting, strategic oversight, and unwavering compliance support to drive sustainable growth with clarity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pt-32 pb-32 relative">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="lg:flex lg:gap-16">
+        <div class="hidden lg:block lg:w-1/4 shrink-0">
+          <div class="sticky top-32">
+            <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4 px-4">Categories</h3>
+            <div class="space-y-1" id="service-sidebar">
+              <a href="#bookkeeping" class="sidebar-link group flex items-center justify-between px-4 py-3 rounded-lg transition-all" data-target="bookkeeping">
+                <span>Bookkeeping (End to end)</span>
+                <svg class="w-4 h-4 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m9 18 6-6-6-6"></path>
+                </svg>
+              </a>
+              <a href="#oversight" class="sidebar-link group flex items-center justify-between px-4 py-3 rounded-lg transition-all" data-target="oversight">
+                <span>Accounting Oversight Services</span>
+                <svg class="w-4 h-4 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m9 18 6-6-6-6"></path>
+                </svg>
+              </a>
+              <a href="#compliance" class="sidebar-link group flex items-center justify-between px-4 py-3 rounded-lg transition-all" data-target="compliance">
+                <span>Statutory Monthly Compliance Services</span>
+                <svg class="w-4 h-4 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m9 18 6-6-6-6"></path>
+                </svg>
+              </a>
+              <a href="#taxation" class="sidebar-link group flex items-center justify-between px-4 py-3 rounded-lg transition-all" data-target="taxation">
+                <span>Taxation Services</span>
+                <svg class="w-4 h-4 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m9 18 6-6-6-6"></path>
+                </svg>
+              </a>
+              <a href="#payroll" class="sidebar-link group flex items-center justify-between px-4 py-3 rounded-lg transition-all" data-target="payroll">
+                <span>Payroll Services</span>
+                <svg class="w-4 h-4 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m9 18 6-6-6-6"></path>
+                </svg>
+              </a>
+              <a href="#advisory" class="sidebar-link group flex items-center justify-between px-4 py-3 rounded-lg transition-all" data-target="advisory">
+                <span>Advisory Services</span>
+                <svg class="w-4 h-4 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m9 18 6-6-6-6"></path>
+                </svg>
+              </a>
+              <a href="#value" class="sidebar-link group flex items-center justify-between px-4 py-3 rounded-lg transition-all" data-target="value">
+                <span>Value-Added Services</span>
+                <svg class="w-4 h-4 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m9 18 6-6-6-6"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:w-3/4 space-y-24">
+          <div id="bookkeeping" class="service-section scroll-mt-32">
+            <div class="md:p-12 overflow-hidden group hover:border-[#3305d8]/20 transition-all duration-500 bg-white border-[#676769]/10 border rounded-3xl pt-8 pr-8 pb-8 pl-8 relative shadow-sm">
+              <div class="absolute top-0 right-0 w-64 h-64 bg-[#3305d8]/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl opacity-50 group-hover:opacity-100 transition-opacity"></div>
+              <div class="flex items-center gap-4 mb-8 relative z-10">
+                <div class="flex group-hover:bg-[#3305d8] group-hover:text-white transition-colors duration-500 text-[#676769] bg-slate-100 w-12 h-12 rounded-xl items-center justify-center">
+                  <i data-lucide="book-check" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-4xl text-slate-900 tracking-tight font-serif">Bookkeeping (End to end)</h2>
+              </div>
+              <div class="relative z-10 space-y-10">
+                <div>
+                  <ul class="space-y-4">
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Recording day-to-day financial transactions (sales, purchases, receipts, payments).</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Maintaining cash book, bank book, sales registers, purchase registers and journal.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Preparation of debtor/creditor ledgers and reconciliation.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Bank reconciliation statements (monthly/quarterly).</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Inventory records and reconciliation with accounts.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Payroll accounting (salary entries, statutory deductions like PF, ESI, TDS).</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Maintenance of fixed asset register with depreciation schedules.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Preparation of management reports (monthly/quarterly MIS).</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Preparation of annual financial statements.</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="oversight" class="service-section scroll-mt-32">
+            <div class="md:p-12 overflow-hidden group hover:border-[#3305d8]/20 transition-all duration-500 bg-white border-[#676769]/10 border rounded-3xl pt-8 pr-8 pb-8 pl-8 relative shadow-sm">
+              <div class="absolute top-0 right-0 w-64 h-64 bg-[#3305d8]/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl opacity-50 group-hover:opacity-100 transition-opacity"></div>
+              <div class="flex items-center gap-4 mb-8 relative z-10">
+                <div class="flex group-hover:bg-[#3305d8] group-hover:text-white transition-colors duration-500 text-[#676769] bg-slate-100 w-12 h-12 rounded-xl items-center justify-center">
+                  <i data-lucide="file-spreadsheet" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-4xl text-slate-900 tracking-tight font-serif">Accounting Oversight Services</h2>
+              </div>
+              <div class="relative z-10 space-y-10">
+                <div>
+                  <ul class="space-y-4">
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Periodic review of accounts for accuracy and compliance.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Review of accruals, provisions, and prepayments.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Consolidation of accounts for group entities.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Assistance in cost accounting and variance analysis.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Support in budgeting and forecasting.</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="compliance" class="service-section scroll-mt-32">
+            <div class="md:p-12 overflow-hidden group hover:border-[#3305d8]/20 transition-all duration-500 bg-white border-[#676769]/10 border rounded-3xl pt-8 pr-8 pb-8 pl-8 relative shadow-sm">
+              <div class="absolute top-0 right-0 w-64 h-64 bg-[#3305d8]/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl opacity-50 group-hover:opacity-100 transition-opacity"></div>
+              <div class="flex items-center gap-4 mb-8 relative z-10">
+                <div class="flex group-hover:bg-[#3305d8] group-hover:text-white transition-colors duration-500 text-[#676769] bg-slate-100 w-12 h-12 rounded-xl items-center justify-center">
+                  <i data-lucide="scale" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-4xl text-slate-900 tracking-tight font-serif">Statutory Monthly Compliance Services</h2>
+              </div>
+              <div class="relative z-10 space-y-10">
+                <div>
+                  <ul class="space-y-4">
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Ensuring compliance with laws and regulations, namely, Income Tax; GST; Professional tax etc.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Assisting in calculating TDS, GST, PT etc.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Recording and tracking TDS, GST, PF, ESI, and other statutory liabilities.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Preparation of schedules for statutory audit and tax audit.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Support in filing returns (GST, TDS, Income Tax, PT) based on accounting records.</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="taxation" class="service-section scroll-mt-32">
+            <div class="md:p-12 overflow-hidden group hover:border-[#3305d8]/20 transition-all duration-500 bg-white border-[#676769]/10 border rounded-3xl pt-8 pr-8 pb-8 pl-8 relative shadow-sm">
+              <div class="absolute top-0 right-0 w-64 h-64 bg-[#3305d8]/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl opacity-50 group-hover:opacity-100 transition-opacity"></div>
+              <div class="flex items-center gap-4 mb-8 relative z-10">
+                <div class="flex group-hover:bg-[#3305d8] group-hover:text-white transition-colors duration-500 text-[#676769] bg-slate-100 w-12 h-12 rounded-xl items-center justify-center">
+                  <i data-lucide="receipt-indian-rupee" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-4xl text-slate-900 tracking-tight font-serif">Taxation Services</h2>
+              </div>
+              <div class="relative z-10 space-y-10">
+                <div>
+                  <h3 class="text-2xl font-medium text-slate-900 mb-6 flex items-center gap-2">Direct Taxes</h3>
+                  <ul class="space-y-4">
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Preparation and filing of Income Tax Returns (ITR) for individuals, firms, companies, trusts, and LLPs.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Tax planning and advisory for salary structuring, capital gains, business income, and investments.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Computation of advance tax and self-assessment tax.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Assistance in obtaining PAN, TAN, and other registrations.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Representation before Income Tax authorities for assessments, appeals, and scrutiny cases.</span></li>
+                  </ul>
+                </div>
+                <div class="h-px bg-[#676769]/10 w-full"></div>
+                <div>
+                  <h3 class="text-2xl font-medium text-slate-900 mb-6 flex items-center gap-2">Indirect Taxes (GST)</h3>
+                  <ul class="space-y-4">
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">GST registration and amendments on registration.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Filing of GST returns (GSTR-1, GSTR-3B, GSTR-9, GSTR-9C).</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">GST reconciliation with books and annual returns.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Advisory on input tax credit (ITC) eligibility and optimization.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Representation in GST audits, assessments, and appeals.</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="payroll" class="service-section scroll-mt-32">
+            <div class="md:p-12 overflow-hidden group hover:border-[#3305d8]/20 transition-all duration-500 bg-white border-[#676769]/10 border rounded-3xl pt-8 pr-8 pb-8 pl-8 relative shadow-sm">
+              <div class="absolute top-0 right-0 w-64 h-64 bg-[#3305d8]/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl opacity-50 group-hover:opacity-100 transition-opacity"></div>
+              <div class="flex items-center gap-4 mb-8 relative z-10">
+                <div class="flex group-hover:bg-[#3305d8] group-hover:text-white transition-colors duration-500 text-[#676769] bg-slate-100 w-12 h-12 rounded-xl items-center justify-center">
+                  <i data-lucide="banknote" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-4xl text-slate-900 tracking-tight font-serif">Payroll Services</h2>
+              </div>
+              <div class="relative z-10 space-y-10">
+                <div>
+                  <ul class="space-y-4">
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Preparation of monthly payrolls.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Calculation of gross pay, net pay, and statutory deductions.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Handling allowances, reimbursements, overtime, incentives, and bonuses.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Generation of pay slips for employees.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Professional Tax (PT) computation and payment.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">TDS on salaries: monthly deduction, deposit, and quarterly return filing (Form 24Q).</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Preparation and issuance of Form 16 to employees.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Implementation of payroll software (Tally, Zoho Payroll, GreytHR, Keka, etc.).</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Cloud-based payroll solutions for remote access.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Outsourced payroll management for SMEs and start-ups.</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="advisory" class="service-section scroll-mt-32">
+            <div class="md:p-12 overflow-hidden group hover:border-[#3305d8]/20 transition-all duration-500 bg-white border-[#676769]/10 border rounded-3xl pt-8 pr-8 pb-8 pl-8 relative shadow-sm">
+              <div class="absolute top-0 right-0 w-64 h-64 bg-[#3305d8]/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl opacity-50 group-hover:opacity-100 transition-opacity"></div>
+              <div class="flex items-center gap-4 mb-8 relative z-10">
+                <div class="flex group-hover:bg-[#3305d8] group-hover:text-white transition-colors duration-500 text-[#676769] bg-slate-100 w-12 h-12 rounded-xl items-center justify-center">
+                  <i data-lucide="briefcase-business" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-4xl text-slate-900 tracking-tight font-serif">Advisory Services</h2>
+              </div>
+              <div class="relative z-10 space-y-10">
+                <div>
+                  <ul class="space-y-4">
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Business setup and entity structuring (Company, LLP, Partnership, Sole Proprietorship).</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Drafting partnership deeds, shareholder agreements, and MOUs.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Assistance in foreign remittance, including liaising with the banks, completing the prior certifications.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Business process improvement and Internal controls review of accounting and financial reporting and suggestions for improvements.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Succession planning and family business governance.</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="value" class="service-section scroll-mt-32">
+            <div class="md:p-12 overflow-hidden group hover:border-[#3305d8]/20 transition-all duration-500 bg-white border-[#676769]/10 border rounded-3xl pt-8 pr-8 pb-8 pl-8 relative shadow-sm">
+              <div class="absolute top-0 right-0 w-64 h-64 bg-[#3305d8]/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl opacity-50 group-hover:opacity-100 transition-opacity"></div>
+              <div class="flex items-center gap-4 mb-8 relative z-10">
+                <div class="flex group-hover:bg-[#3305d8] group-hover:text-white transition-colors duration-500 text-[#676769] bg-slate-100 w-12 h-12 rounded-xl items-center justify-center">
+                  <i data-lucide="sparkles" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-4xl text-slate-900 tracking-tight font-serif">Value-Added Services</h2>
+              </div>
+              <div class="relative z-10 space-y-10">
+                <div>
+                  <ul class="space-y-4">
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Designing accounting systems and processes.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Migration to accounting software (Tally, Zoho,etc.).</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Cloud-based bookkeeping solutions for remote access.</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Advisory on accounting standards (Ind AS/IFRS).</span></li>
+                    <li class="flex items-start gap-3 group/item"><div class="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#676769]/40 group-hover/item:bg-[#3305d8] transition-colors shrink-0"></div><span class="text-lg text-[#676769] font-light leading-relaxed group-hover/item:text-slate-900 transition-colors">Training client staff on bookkeeping practices.</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="overflow-hidden bg-slate-700 pt-32 pb-32 relative">
+    <div class="-translate-x-1/2 blur-[100px] bg-[conic-gradient(from_0deg,var(--tw-gradient-stops))] from-[#000000]/10 via-[#3305d8]/80 to-[#150061]/0 w-[1000px] h-[400px] pointer-events-none rounded-[100%] absolute top-0 left-1/2"></div>
+    <div class="z-10 text-center max-w-4xl mr-auto ml-auto pr-8 pl-8 relative">
+      <h2 class="md:text-5xl text-4xl font-medium text-white tracking-tight font-serif mb-6">Precision in every figure.</h2>
+      <p class="leading-relaxed md:text-xl text-lg font-light text-slate-300 max-w-2xl mr-auto mb-12 ml-auto">
+        Experience the difference of strategic financial stewardship. Let us handle the complexities while you focus on growth.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/contact" class="btn-curtain w-full sm:w-auto px-8 py-4 bg-white text-slate-900 text-sm font-medium tracking-widest uppercase border border-transparent hover:border-white transition-all">
+          Get Started
+        </a>
+      </div>
+    </div>
+  </section>
+</SiteLayout>
+

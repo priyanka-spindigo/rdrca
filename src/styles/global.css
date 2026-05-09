@@ -1,0 +1,19 @@
+/* Centralized global styling entrypoint.
+   We keep the original site CSS in /public/assets/css/ and import it here
+   so pages/layout only need a single stylesheet reference. */
+
+@import url("/assets/css/tailwind-compiled.css");
+@import url("/assets/css/style.css");
+
+/* Page-specific overrides moved from inline <style> blocks */
+.intro-headline em {
+  color: #3305d8 !important;
+  font-style: italic !important;
+}
+
+.hero-headline em,
+.hero-headline i {
+  color: #3305d8 !important;
+  font-style: italic !important;
+}
+

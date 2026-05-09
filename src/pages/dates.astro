@@ -1,0 +1,133 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+---
+
+<SiteLayout
+  title="Important Financial Dates & Deadlines | India Tax Calendar"
+  description="Stay ahead of critical financial deadlines. A curated calendar of income tax, GST, and compliance due dates for Indian businesses and taxpayers."
+>
+  <section class="overflow-hidden lg:pt-52 lg:pb-36 border-[#3305d8]/10 border-b pt-40 pb-28 relative">
+    <div class="absolute inset-0 -z-20 h-full w-full bg-white"></div>
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-slate-50/50 via-white to-white"></div>
+    <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#676769_1px,transparent_1px),linear-gradient(to_bottom,#676769_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-[0.03]"></div>
+
+    <div class="max-w-7xl mr-auto ml-auto pr-8 pl-8">
+      <div class="flex flex-col text-center items-center">
+        <div class="relative z-10 max-w-5xl mx-auto">
+          <span class="uppercase text-sm font-semibold tracking-widest text-[#3305d8]">Timeline</span>
+          <h1 class="font-serif text-5xl font-medium tracking-tight text-slate-900 md:text-7xl leading-[1.05] mt-6">
+            Key Financial Dates
+          </h1>
+          <p class="leading-relaxed text-xl font-light text-[#676769] max-w-2xl mt-8 mr-auto ml-auto">
+            Stay ahead of your deadlines with our curated list of important financial dates for Indian businesses and individuals.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-32 bg-slate-50 min-h-screen">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="flex flex-col lg:flex-row gap-12">
+        <aside class="lg:w-1/4 shrink-0">
+          <div class="bg-white p-6 rounded-2xl border border-[#676769]/10 shadow-sm z-30">
+            <div class="lg:hidden flex items-center justify-between cursor-pointer mb-4" id="filter-toggle">
+              <h3 class="font-serif text-xl text-slate-900">Filters</h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chevron-down w-5 h-5 transition-transform duration-300 transform"
+                id="filter-arrow"
+              >
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </div>
+
+            <div id="filter-section" class="hidden lg:block space-y-6">
+              <div id="sidebar-clear-wrapper" class="hidden flex justify-end">
+                <button
+                  id="sidebar-clear"
+                  class="text-xs font-bold uppercase tracking-widest text-[#3305d8] hover:text-[#20038a] transition-colors flex items-center gap-1"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x">
+                    <path d="M18 6 6 18"></path>
+                    <path d="m6 6 12 12"></path>
+                  </svg>
+                  Clear
+                </button>
+              </div>
+
+              <div>
+                <label for="date-search" class="block text-sm font-semibold uppercase tracking-widest text-[#676769] mb-2">Search</label>
+                <div class="relative">
+                  <input
+                    type="text"
+                    id="date-search"
+                    placeholder="Search dates..."
+                    class="w-full bg-slate-50 border border-[#676769]/20 rounded-lg pl-10 pr-4 py-3 text-slate-900 placeholder-[#676769]/50 focus:outline-none focus:border-[#3305d8] focus:ring-1 focus:ring-[#3305d8] transition-all"
+                  />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute left-4 ml-0 top-1/2 -translate-y-1/2 text-[#676769]/50">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <div>
+                <label for="date-category" class="block text-sm font-semibold uppercase tracking-widest text-[#676769] mb-2">Category</label>
+                <div class="relative">
+                  <select
+                    id="date-category"
+                    class="w-full bg-slate-50 border border-[#676769]/20 rounded-lg pl-4 pr-10 py-3 text-slate-900 focus:outline-none focus:border-[#3305d8] focus:ring-1 focus:ring-[#3305d8] transition-all appearance-none cursor-pointer"
+                  >
+                    <option value="">All Categories</option>
+                  </select>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute right-4 top-1/2 -translate-y-1/2 text-[#676769] pointer-events-none w-4 h-4 z-10">
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <div>
+                <label for="date-subcategory" class="block text-sm font-semibold uppercase tracking-widest text-[#676769] mb-2">Subcategory</label>
+                <div class="relative">
+                  <select
+                    id="date-subcategory"
+                    class="w-full bg-slate-50 border border-[#676769]/20 rounded-lg pl-4 pr-10 py-3 text-slate-900 focus:outline-none focus:border-[#3305d8] focus:ring-1 focus:ring-[#3305d8] transition-all appearance-none cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    <option value="">Select Subcategory</option>
+                  </select>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute right-4 top-1/2 -translate-y-1/2 text-[#676769] pointer-events-none w-4 h-4 z-10">
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <main class="lg:w-3/4">
+          <div id="dates-list" class="flex flex-col gap-6"></div>
+
+          <div id="no-results" class="hidden text-center py-20">
+            <p class="text-xl text-[#676769] font-light">No dates found matching your criteria.</p>
+            <button id="clear-filters" class="mt-4 text-[#3305d8] font-medium hover:underline">Clear Filters</button>
+          </div>
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    window.rdrDates = [{"id":"filing","title":"Filing","description":"","category":"GST","subcategory":"GSTR-9","day":"04","month":"Feb","fullDate":"February 4, 2026","rawDate":"2026-02-04"},{"id":"tds-jan-2026","title":"TDS Payment for January 2026","description":"Due date for deposit of Tax Deducted/Collected for the month of January 2026.","category":"Income Tax","subcategory":"TDS","day":"07","month":"Feb","fullDate":"February 7, 2026","rawDate":"2026-02-07"},{"id":"gstr1-jan-2026","title":"GSTR-1 (Monthly) - Jan 2026","description":"Due date for filing GSTR-1 for the month of January 2026.","category":"GST","subcategory":"GSTR-1","day":"11","month":"Feb","fullDate":"February 11, 2026","rawDate":"2026-02-11"},{"id":"gstr3b-jan-2026","title":"GSTR-3B (Monthly) - Jan 2026","description":"Due date for filing GSTR-3B for the month of January 2026.","category":"GST","subcategory":"GSTR-3B","day":"20","month":"Feb","fullDate":"February 20, 2026","rawDate":"2026-02-20"},{"id":"tds-payment-for-february-2026","title":"TDS Payment for February 2026","description":"TDS Payment for Feb26","category":"Income Tax","subcategory":"","day":"07","month":"Mar","fullDate":"March 7, 2026","rawDate":"2026-03-07"},{"id":"gstr1-feb26","title":"GSTR1- (Monthly) - Feb26","description":"GSTR1 Filing","category":"GST","subcategory":"","day":"11","month":"Mar","fullDate":"March 11, 2026","rawDate":"2026-03-11"},{"id":"advance-tax-q4","title":"Advance Tax Installment 4","description":"Due date for payment of 4th installment of Advance Tax for FY 2025-26.","category":"Income Tax","subcategory":"Advance Tax","day":"15","month":"Mar","fullDate":"March 15, 2026","rawDate":"2026-03-15"},{"id":"gstr-3b-monthly-feb-2026","title":"GSTR-3B (Monthly) - Feb 2026","description":"GSTR3B filing","category":"GST","subcategory":"","day":"20","month":"Mar","fullDate":"March 20, 2026","rawDate":"2026-03-20"},{"id":"fy-end-2026","title":"Financial Year End 2025-26","description":"End of Financial Year 2025-26. Ensure books are closed and regulatory compliances are met.","category":"Compliance","subcategory":"ROC","day":"31","month":"Mar","fullDate":"March 31, 2026","rawDate":"2026-03-31"},{"id":"gstr1-monthly-march-26","title":"GSTR1- (Monthly) - March 26","description":"GSTR1 Filing","category":"GST","subcategory":"","day":"11","month":"Apr","fullDate":"April 11, 2026","rawDate":"2026-04-11"},{"id":"gstr-3b-monthly-march-2026","title":"GSTR-3B (Monthly) - March 2026","description":"GSTR3B filing","category":"GST","subcategory":"","day":"20","month":"Apr","fullDate":"April 20, 2026","rawDate":"2026-04-20"},{"id":"tds-payment-for-march-2026","title":"TDS Payment for March 2026","description":"TDS payment for March26","category":"Income Tax","subcategory":"","day":"30","month":"Apr","fullDate":"April 30, 2026","rawDate":"2026-04-30"},{"id":"tds-return-filing-due-dates-for-fy2025-26","title":"TDS Return Filing Due Dates for period January 26 to March 26","description":"TDS returns due date for FY 2025-26 are as follows:\\n\\nQuarter\\tPeriod\\tDue Date (FY 2025-26)\\n1\\t01st April 2025 to 30th June 2025\\t31st July 2025\\n2\\t01st July 2025 to 30th Sept 2025\\t31st October 2025\\n3\\t01st Oct 2025 to 31st Dec 2025\\t31st January 2026\\n4\\t01st Jan 2026 to 31st March 2026\\t31st May 2026","category":"Income Tax","subcategory":"","day":"31","month":"May","fullDate":"May 31, 2026","rawDate":"2026-05-31"},{"id":"income-tax-returns-due-dates","title":"Income Tax Returns Due Dates_Salaried Individuals, Pensioners, HUF with no business income","description":"Salaried individuals, pensioners, individuals and HUFs with no business or professional income, most small taxpayers with simple income sources.","category":"Income Tax","subcategory":"","day":"31","month":"Jul","fullDate":"July 31, 2026","rawDate":"2026-07-31"},{"id":"who-should-file-an-income-tax-return-by-august-31","title":"Who should file an income tax return by August 31?","description":"Individuals and HUFs with business or professional income (no audit required). Partners in firms (even if they don’t have business income themselves).","category":"Income Tax","subcategory":"","day":"31","month":"Aug","fullDate":"August 31, 2026","rawDate":"2026-08-31"},{"id":"tax-return-due-date-where-audit-is-required","title":"Tax Return due date where audit is required","description":"Taxpayers whose accounts require audit under the Income-tax Act or any other law, Companies, trusts, NPOs, societies, AOPs and BOIs requiring audit need to file tax by October 31.","category":"Income Tax","subcategory":"","day":"31","month":"Oct","fullDate":"October 31, 2026","rawDate":"2026-10-31"}];
+  </script>
+  <script is:inline src="/assets/js/important-dates.js"></script>
+</SiteLayout>
+

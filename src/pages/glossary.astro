@@ -1,0 +1,95 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+---
+
+<SiteLayout
+  title="Financial Glossary | Accounting & Tax Terms Explained"
+  description="A comprehensive glossary of accounting, taxation, and financial terms. Understand the complex language of finance with RDR & Associates."
+>
+  <section class="overflow-hidden lg:pt-52 lg:pb-36 border-[#3305d8]/10 border-b pt-40 pb-28 relative">
+    <div class="absolute inset-0 -z-20 h-full w-full bg-white"></div>
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-slate-50/50 via-white to-white"></div>
+    <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#676769_1px,transparent_1px),linear-gradient(to_bottom,#676769_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-[0.03]"></div>
+
+    <div class="max-w-7xl mr-auto ml-auto pr-8 pl-8">
+      <div class="flex flex-col text-center items-center">
+        <div class="relative z-10 max-w-5xl mx-auto">
+          <span class="uppercase text-sm font-semibold tracking-widest text-[#3305d8]">Terminology</span>
+          <h1 class="font-serif text-5xl font-medium tracking-tight text-slate-900 md:text-7xl leading-[1.05] mt-6">
+            Important Terms
+          </h1>
+          <p class="leading-relaxed text-xl font-light text-[#676769] max-w-2xl mt-8 mr-auto ml-auto">
+            A comprehensive guide to financial, tax, and compliance terminology to help you navigate the complexities of business finance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-32 bg-slate-50 min-h-screen">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="flex flex-col lg:flex-row gap-12">
+        <aside class="lg:w-1/4 shrink-0">
+          <div class="bg-white p-6 rounded-2xl border border-[#676769]/10 shadow-sm z-30">
+            <div class="lg:hidden flex items-center justify-between cursor-pointer mb-4" id="filter-toggle">
+              <h3 class="font-serif text-xl text-slate-900">Filters</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 transition-transform duration-300 transform" id="filter-arrow"><path d="m6 9 6 6 6-6"></path></svg>
+            </div>
+
+            <div id="filter-section" class="hidden lg:block space-y-6">
+              <div id="sidebar-clear-wrapper" class="hidden flex justify-end">
+                <button id="sidebar-clear" class="text-xs font-bold uppercase tracking-widest text-[#3305d8] hover:text-[#20038a] transition-colors flex items-center gap-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                  Clear
+                </button>
+              </div>
+
+              <div>
+                <label for="glossary-search" class="block text-sm font-semibold uppercase tracking-widest text-[#676769] mb-2">Search</label>
+                <div class="relative">
+                  <input type="text" id="glossary-search" placeholder="Search terms..." class="w-full bg-slate-50 border border-[#676769]/20 rounded-lg pl-10 pr-4 py-3 text-slate-900 placeholder-[#676769]/50 focus:outline-none focus:border-[#3305d8] focus:ring-1 focus:ring-[#3305d8] transition-all" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute left-4 ml-0 top-1/2 -translate-y-1/2 text-[#676769]/50"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+                </div>
+              </div>
+
+              <div>
+                <label for="glossary-category" class="block text-sm font-semibold uppercase tracking-widest text-[#676769] mb-2">Category</label>
+                <div class="relative">
+                  <select id="glossary-category" class="w-full bg-slate-50 border border-[#676769]/20 rounded-lg pl-4 pr-10 py-3 text-slate-900 focus:outline-none focus:border-[#3305d8] focus:ring-1 focus:ring-[#3305d8] transition-all appearance-none cursor-pointer">
+                    <option value="">All Categories</option>
+                  </select>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute right-4 top-1/2 -translate-y-1/2 text-[#676769] pointer-events-none w-4 h-4 z-10"><path d="m6 9 6 6 6-6"/></svg>
+                </div>
+              </div>
+
+              <div>
+                <label for="glossary-subcategory" class="block text-sm font-semibold uppercase tracking-widest text-[#676769] mb-2">Subcategory</label>
+                <div class="relative">
+                  <select id="glossary-subcategory" class="w-full bg-slate-50 border border-[#676769]/20 rounded-lg pl-4 pr-10 py-3 text-slate-900 focus:outline-none focus:border-[#3305d8] focus:ring-1 focus:ring-[#3305d8] transition-all appearance-none cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
+                    <option value="">Select Subcategory</option>
+                  </select>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute right-4 top-1/2 -translate-y-1/2 text-[#676769] pointer-events-none w-4 h-4 z-10"><path d="m6 9 6 6 6-6"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <main class="lg:w-3/4">
+          <div id="glossary-list" class="grid grid-cols-1 gap-6"></div>
+
+          <div id="no-results" class="hidden text-center py-20">
+            <p class="text-xl text-[#676769] font-light">No terms found matching your criteria.</p>
+            <button id="clear-filters" class="mt-4 text-[#3305d8] font-medium hover:underline">Clear Filters</button>
+          </div>
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    window.rdrGlossaryTerms = [{"id":"term-6","term":"Advance Tax","definition":"Tax paid in installments during the financial year. ie. 15th June, 15th Sept, 15th Dec and 15th Mar.","category":"Taxation","subcategory":"Income Tax"},{"id":"term-10","term":"BPO (Business Process Outsourcing)","definition":"Delegating non-core business functions like accounting, payroll, or customer service to external agencies.","category":"Management","subcategory":"Outsourcing"},{"id":"term-7","term":"Corporate Governance","definition":"Framework of rules and practices for company management.","category":"Management","subcategory":"Corporate Tax"},{"id":"term-4","term":"Form 16","definition":"Certificate issued by employer showing salary paid and tax deducted.","category":"Management","subcategory":"Payroll"},{"id":"term-1","term":"Good and Services Tax","definition":"Indirect tax on supply of goods and services.","category":"Taxation","subcategory":"GST"},{"id":"term-9","term":"Gratuity","definition":"Lump sum payment made to employees after completing a minimum period of service.","category":"Management","subcategory":"Payroll"},{"id":"term-5","term":"Income Tax","definition":"Tax levied on individual and corporate earnings.","category":"Taxation","subcategory":"Income Tax"},{"id":"term-14","term":"Input Tax Credit (ITC)","definition":"Credit for taxes paid on inputs, offset against output tax liability.","category":"Taxation","subcategory":"GST"},{"id":"term-11","term":"Leave Encashment","definition":"Payment made for unused leave days.","category":"Management","subcategory":"Payroll"},{"id":"term-12","term":"MAT (Minimum Alternate Tax)","definition":"Tax imposed on companies that show low taxable income due to exemptions/deductions, ensuring they pay a minimum tax.","category":"Taxation","subcategory":"Corporate Tax"},{"id":"term-15","term":"Net Salary (Take-home Pay)","definition":"Salary received by the employee after all deductions.","category":"Management","subcategory":"Payroll"},{"id":"term-2","term":"Payroll","definition":"The process of calculating and distributing wages, salaries, bonuses, and deductions to employees.","category":"Management","subcategory":"Payroll"},{"id":"term-13","term":"Perquisites","definition":"Non-cash benefits provided by employers, taxable as part of salary.","category":"Management","subcategory":"Payroll"},{"id":"term-3","term":"Professional Tax (Payroll)","definition":"State-level tax levied on salaried individuals whose salary is more than 25000 per month (in Karnataka). The slabs are different for each state.","category":"Management","subcategory":"Payroll"},{"id":"term-8","term":"TAN (Tax Deduction and Collection Account Number)","definition":"Number required for entities deducting or collecting tax at source.","category":"Taxation","subcategory":"Income Tax"}];
+  </script>
+  <script is:inline src="/assets/js/glossary.js"></script>
+</SiteLayout>
+
