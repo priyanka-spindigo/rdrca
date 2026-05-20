@@ -1,0 +1,7 @@
+services:
+  - type: static_site
+    name: rdrca-website
+    buildCommand: npm ci && npm run build
+    staticPublishPath: dist
+    pullRequestPreviewsEnabled: true
+
