@@ -1,5 +1,8 @@
 ---
 import SiteLayout from "../layouts/SiteLayout.astro";
+import { getBlogPosts } from "../lib/fetch";
+
+const blogPosts = await getBlogPosts();
 ---
 
 <SiteLayout
@@ -87,8 +90,8 @@ import SiteLayout from "../layouts/SiteLayout.astro";
     </div>
   </section>
 
-  <script is:inline>
-    window.rdrBlogPosts = [{"id":"gst-compliance-common-pitfalls","title":"GST Compliance, common pitfalls","excerpt":"The Goods and Services Tax (GST) has revolutionized the Indian taxation system, bringing uniformity and transparency. However, for many businesses, navigating …","category":"Taxation","subcategory":"GST","image":"https://rdrca.com/media/pages/blog/gst-compliance-common-pitfalls/6d5b62266e-1774868231/gst-cover-600x.png","date":"January 26, 2026","link":"/blog/gst-compliance-common-pitfalls"},{"id":"navigating-the-new-tax-regime","title":"Navigating the new Tax Regime","excerpt":"Overview Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the …","category":"Taxation","subcategory":"Income Tax","image":"https://rdrca.com/media/pages/blog/navigating-the-new-tax-regime/baa9cf08a3-1774868231/photo-1554224155-8d04cb21cd6c-600x.jpg","date":"January 26, 2026","link":"/blog/navigating-the-new-tax-regime"},{"id":"optimizing-payroll-management","title":"Optimizing Payroll Management","excerpt":"Introduction Article body goes here.","category":"Management","subcategory":"Payroll","image":"https://rdrca.com/media/pages/blog/optimizing-payroll-management/32db0a2dbc-1774868231/photo-1563986768609-322da13575f3-600x.jpg","date":"January 26, 2026","link":"/blog/optimizing-payroll-management"},{"id":"role-of-audits-in-business-growth","title":"Role of Audits in business growth","excerpt":"Overview Test content...","category":"Management","subcategory":"Payroll","image":"https://rdrca.com/media/pages/blog/role-of-audits-in-business-growth/5fed9eeac1-1774868231/photo-1454165804606-c3d57bc86b40-600x.jpg","date":"January 26, 2026","link":"/blog/role-of-audits-in-business-growth"},{"id":"strategic-financial-planning-for-2026","title":"Strategic financial planning for 2026","excerpt":"Overview Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the …","category":"Management","subcategory":"Outsourcing","image":"https://rdrca.com/media/pages/blog/strategic-financial-planning-for-2026/5b4f0a2e11-1774868231/photo-1590283603385-17ffb3a7f29f-600x.jpg","date":"January 26, 2026","link":"/blog/strategic-financial-planning-for-2026"}];
+  <script is:inline define:vars={{ blogPosts }}>
+    window.rdrBlogPosts = blogPosts;
   </script>
   <script is:inline src="/assets/js/blog.js"></script>
 </SiteLayout>

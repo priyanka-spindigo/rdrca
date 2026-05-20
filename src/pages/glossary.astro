@@ -1,5 +1,8 @@
 ---
 import SiteLayout from "../layouts/SiteLayout.astro";
+import { getGlossaryTerms } from "../lib/fetch";
+
+const glossaryTerms = await getGlossaryTerms();
 ---
 
 <SiteLayout
@@ -87,8 +90,8 @@ import SiteLayout from "../layouts/SiteLayout.astro";
     </div>
   </section>
 
-  <script is:inline>
-    window.rdrGlossaryTerms = [{"id":"term-6","term":"Advance Tax","definition":"Tax paid in installments during the financial year. ie. 15th June, 15th Sept, 15th Dec and 15th Mar.","category":"Taxation","subcategory":"Income Tax"},{"id":"term-10","term":"BPO (Business Process Outsourcing)","definition":"Delegating non-core business functions like accounting, payroll, or customer service to external agencies.","category":"Management","subcategory":"Outsourcing"},{"id":"term-7","term":"Corporate Governance","definition":"Framework of rules and practices for company management.","category":"Management","subcategory":"Corporate Tax"},{"id":"term-4","term":"Form 16","definition":"Certificate issued by employer showing salary paid and tax deducted.","category":"Management","subcategory":"Payroll"},{"id":"term-1","term":"Good and Services Tax","definition":"Indirect tax on supply of goods and services.","category":"Taxation","subcategory":"GST"},{"id":"term-9","term":"Gratuity","definition":"Lump sum payment made to employees after completing a minimum period of service.","category":"Management","subcategory":"Payroll"},{"id":"term-5","term":"Income Tax","definition":"Tax levied on individual and corporate earnings.","category":"Taxation","subcategory":"Income Tax"},{"id":"term-14","term":"Input Tax Credit (ITC)","definition":"Credit for taxes paid on inputs, offset against output tax liability.","category":"Taxation","subcategory":"GST"},{"id":"term-11","term":"Leave Encashment","definition":"Payment made for unused leave days.","category":"Management","subcategory":"Payroll"},{"id":"term-12","term":"MAT (Minimum Alternate Tax)","definition":"Tax imposed on companies that show low taxable income due to exemptions/deductions, ensuring they pay a minimum tax.","category":"Taxation","subcategory":"Corporate Tax"},{"id":"term-15","term":"Net Salary (Take-home Pay)","definition":"Salary received by the employee after all deductions.","category":"Management","subcategory":"Payroll"},{"id":"term-2","term":"Payroll","definition":"The process of calculating and distributing wages, salaries, bonuses, and deductions to employees.","category":"Management","subcategory":"Payroll"},{"id":"term-13","term":"Perquisites","definition":"Non-cash benefits provided by employers, taxable as part of salary.","category":"Management","subcategory":"Payroll"},{"id":"term-3","term":"Professional Tax (Payroll)","definition":"State-level tax levied on salaried individuals whose salary is more than 25000 per month (in Karnataka). The slabs are different for each state.","category":"Management","subcategory":"Payroll"},{"id":"term-8","term":"TAN (Tax Deduction and Collection Account Number)","definition":"Number required for entities deducting or collecting tax at source.","category":"Taxation","subcategory":"Income Tax"}];
+  <script is:inline define:vars={{ glossaryTerms }}>
+    window.rdrGlossaryTerms = glossaryTerms;
   </script>
   <script is:inline src="/assets/js/glossary.js"></script>
 </SiteLayout>
